@@ -23,7 +23,6 @@ POSSIBLE_NUTRIENTS = [
     "Potassium", "Zinc", "Protein", "Carbohydrates", "Sugars", "Fiber", "Fat", "Sodium"
 ]
 
-# Build the graph ONCE at app startup
 G = None
 def build_knowledge_graph(health_data_path, food_data_group_path):
     print("[DEBUG] Building knowledge graph...")
