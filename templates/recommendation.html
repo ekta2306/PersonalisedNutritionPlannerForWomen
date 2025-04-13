@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Your Diet Recommendation</title>
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .recommendation {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: #f7f5fd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-instruction {
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    label, .symptom2, .age2, .height2, .weight2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #444;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    .obforms-getrecommendation {
+      background-color: #2d2d2d;
+      color: #fff;
+      font-size: 16px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .obforms-getrecommendation:hover {
+      background-color: #0056b3;
+    }
+
+    .recommendation-title {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 22px;
+      color: #222;
+    }
+
+    .recommendation-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #444;
+      text-align: center;
+    }
+
+    .recommendation-list li {
+      margin: 10px 0;
+    }
+
+    .back-btn {
+      display: block;
+      margin: 40px auto 0 auto;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="recommendation" class="recommendation">
+    <!-- Instruction paragraph -->
+    <div id="form-instruction" class="form-instruction">
+      Enter any symptom that you may be facing and your age, height and weight for a personalized recommendation
+    </div>
+
+    <!-- Recommendation form -->
+    <form method="POST" action="{{ url_for('recommendation') }}">
+      <!-- Symptom (string) -->
+      <div id="obforms-symptom" class="obforms-symptom">
+        <div id="symptom2" class="symptom2">Symptom</div>
+        <input id="name" class="name" type="text" name="symptom" placeholder="e.g. fatigue, joint pain" required />
+      </div>
+
+      <!-- Age (number) -->
+      <div id="obforms-age" class="obforms-age">
+        <div id="age2" class="age2">Age</div>
+        <input id="name2" class="name2" type="number" name="age" required />
+      </div>
+
+      <!-- Height (number) -->
+      <div id="obforms-height" class="obforms-height">
+        <div id="height2" class="height2">Height (in cm)</div>
+        <input id="name3" class="name3" type="number" step="0.1" name="height" required />
+      </div>
+
+      <!-- Weight (number) -->
+      <div id="obforms-weight" class="obforms-weight">
+        <div id="weight2" class="weight2">Weight (in kg)</div>
+        <input id="name4" class="name4" type="number" step="0.1" name="weight" required />
+      </div>
+
+      <!-- Submit Button -->
+      <button id="obforms-getrecommendation" class="obforms-getrecommendation" type="submit">
+        <div id="name5" class="name5">Get Recommendations</div>
+      </button>
+    </form>
+
+    <!-- Output Section -->
+    {% if recommended_foods %}
+      <h2 class="recommendation-title">Top 10 Recommended Foods</h2>
+      <ul class="recommendation-list">
+        {% for food in recommended_foods %}
+          <li>{{ food }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <!-- Back button -->
+    <a href="{{ url_for('home') }}">
+      <button class="back-btn">Back</button>
+    </a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,432 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.home .top-bar {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 100px;
+}
+
+.home .header {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 758px;
+  background-color: #f7f5fd;
+}
+
+.home .div {
+  position: relative;
+  width: 1080px;
+  height: 460px;
+  top: 149px;
+  left: 100px;
+}
+
+.home .frame-wrapper {
+  position: absolute;
+  width: 466px;
+  height: 585px;
+  top: 0;
+  left: 0;
+}
+
+.home .frame {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 41px;
+  position: relative;
+}
+
+.home .frame-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.home .title {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-size: var(--headline-80px-semibold-font-size);
+  line-height: var(--headline-80px-semibold-line-height);
+  font-family: var(--headline-80px-semibold-font-family);
+  font-weight: var(--headline-80px-semibold-font-weight);
+  color: #2d2d2d;
+  letter-spacing: var(--headline-80px-semibold-letter-spacing);
+  font-style: var(--headline-80px-semibold-font-style);
+}
+
+.home .subtitle {
+  position: relative;
+  width: 466px;
+  height: 90.24px;
+  opacity: 0.5;
+  font-family: var(--body-text-18px-regular-font-family);
+  font-weight: var(--body-text-18px-regular-font-weight);
+  color: #2d2d2d;
+  font-size: var(--body-text-18px-regular-font-size);
+  letter-spacing: var(--body-text-18px-regular-letter-spacing);
+  line-height: var(--body-text-18px-regular-line-height);
+  font-style: var(--body-text-18px-regular-font-style);
+}
+
+.home .primary-CTA-get-wrapper {
+  position: relative;
+  width: 380px;
+  height: 64px;
+}
+
+.home .primary-CTA-get {
+  all: unset;
+  box-sizing: border-box;
+  width: 203px;
+  height: 64px;
+  background-color: #f8d57e;
+  border-radius: 10px;
+}
+
+.home .overlap-group {
+  position: relative;
+  height: 64px;
+  border-radius: 10px;
+}
+
+.home .hover {
+  position: absolute;
+  width: 203px;
+  height: 64px;
+  top: 0;
+  left: 0;
+  background-color: #f8d57e;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.home .hover:hover {
+  background-color: #dfbf70;
+}
+
+.home .text-wrapper {
+  position: absolute;
+  height: 32px;
+  top: 15px;
+  left: 50px;
+  font-family: var(--body-text-18px-regular-font-family);
+  font-weight: var(--body-text-18px-regular-font-weight);
+  color: #2d2d2d;
+  font-size: var(--body-text-18px-regular-font-size);
+  text-align: center;
+  letter-spacing: var(--body-text-18px-regular-letter-spacing);
+  line-height: var(--body-text-18px-regular-line-height);
+  white-space: nowrap;
+  font-style: var(--body-text-18px-regular-font-style);
+}
+
+.home .live-link {
+  position: absolute;
+  height: 32px;
+  top: 15px;
+  left: 50px;
+  opacity: 0.0;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #2d2d2d;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 32px;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.home .image {
+  position: absolute;
+  width: 500px;
+  height: 460px;
+  top: 0;
+  left: 580px;
+  object-fit: cover;
+}
+
+.home .features {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 500px;
+  background-color: #ffffff;
+}
+
+.home .frame-3 {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 60px;
+  position: relative;
+  top: 68px;
+  left: 36px;
+}
+
+.home .AI-symptom-detection {
+  position: relative;
+  width: 234px;
+  height: 332px;
+}
+
+.home .p {
+  position: relative;
+  width: 230px;
+  top: 50px;
+  left: 20px;
+  text-align: center;
+  opacity: 0.5;
+  font-family: var(--body-text-18px-regular-font-family);
+  font-weight: var(--body-text-18px-regular-font-weight);
+  color: #2d2d2d;
+  font-size: var(--body-text-18px-regular-font-size);
+  letter-spacing: var(--body-text-18px-regular-letter-spacing);
+  line-height: var(--body-text-18px-regular-line-height);
+  font-style: var(--body-text-18px-regular-font-style);
+}
+
+.home .tile {
+  top: 125px;
+  left: 100px;
+  font-family: var(--secondary-body-text-title-18px-semibold-font-family);
+  font-weight: var(--secondary-body-text-title-18px-semibold-font-weight);
+  color: #2d2d2d;
+  font-size: var(--secondary-body-text-title-18px-semibold-font-size);
+  letter-spacing: var(--secondary-body-text-title-18px-semibold-letter-spacing);
+  line-height: var(--secondary-body-text-title-18px-semibold-line-height);
+  white-space: nowrap;
+  font-style: var(--secondary-body-text-title-18px-semibold-font-style);
+}
+
+.home .symptom-detection {
+  position: relative;
+  width: 85px;
+  height: 85px;
+  top: 0;
+  left: 100px;
+  background-image: url(./img/image-2.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.home .nutrient-based {
+  position: relative;
+  width: 326px;
+  height: 364px;
+}
+
+.home .subtitle-2 {
+  position: realtive;
+  width: 230px;
+  top: 172px;
+  left: 46px;
+  text-align: center;
+  opacity: 0.5;
+  font-family: var(--body-text-18px-regular-font-family);
+  font-weight: var(--body-text-18px-regular-font-weight);
+  color: #2d2d2d;
+  font-size: var(--body-text-18px-regular-font-size);
+  letter-spacing: var(--body-text-18px-regular-letter-spacing);
+  line-height: var(--body-text-18px-regular-line-height);
+  font-style: var(--body-text-18px-regular-font-style);
+}
+
+.home .title-2 {
+  top: 125px;
+  left: 50px;
+  font-size: var(--secondary-body-text-title-18px-semibold-font-size);
+  text-align: center;
+  line-height: var(--secondary-body-text-title-18px-semibold-line-height);
+  white-space: nowrap;
+  font-family: var(--secondary-body-text-title-18px-semibold-font-family);
+  font-weight: var(--secondary-body-text-title-18px-semibold-font-weight);
+  color: #2d2d2d;
+  letter-spacing: var(--secondary-body-text-title-18px-semibold-letter-spacing);
+  font-style: var(--secondary-body-text-title-18px-semibold-font-style);
+}
+
+.home .nutrition {
+  position: relative;
+  width: 85px;
+  height: 85px;
+  top: 0;
+  left: 118px;
+  background-image: url(./img/nutrition.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.home .smart-calorie {
+  position: relative;
+  width: 241px;
+  height: 332px;
+}
+
+.home .title-3 {
+  top: 125px;
+  left: 70px;
+  font-size: var(--secondary-body-text-title-18px-semibold-font-size);
+  line-height: var(--secondary-body-text-title-18px-semibold-line-height);
+  white-space: nowrap;
+  font-family: var(--secondary-body-text-title-18px-semibold-font-family);
+  font-weight: var(--secondary-body-text-title-18px-semibold-font-weight);
+  color: #2d2d2d;
+  letter-spacing: var(--secondary-body-text-title-18px-semibold-letter-spacing);
+  font-style: var(--secondary-body-text-title-18px-semibold-font-style);
+}
+
+.home .calorie {
+  position: relative;
+  width: 85px;
+  height: 85px;
+  top: 0;
+  left: 72px;
+  background-image: url(./img/image-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.home .goal-focused {
+  position: relative;
+  width: 244px;
+  height: 332px;
+  margin-right: -4.00px;
+}
+
+.home .title-4 {
+  top: 125px;
+  left: 16px;
+  font-size: var(--secondary-body-text-title-18px-semibold-font-size);
+  line-height: var(--secondary-body-text-title-18px-semibold-line-height);
+  white-space: nowrap;
+  font-family: var(--secondary-body-text-title-18px-semibold-font-family);
+  font-weight: var(--secondary-body-text-title-18px-semibold-font-weight);
+  color: #2d2d2d;
+  letter-spacing: var(--secondary-body-text-title-18px-semibold-letter-spacing);
+  font-style: var(--secondary-body-text-title-18px-semibold-font-style);
+}
+
+.home .goal {
+  position: relative;
+  width: 85px;
+  height: 85px;
+  top: 0;
+  left: 72px;
+  background-image: url(./img/image-1-2.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.home .user-feedback {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 500px;
+  background-color: #ece7fb;
+}
+
+.home .div-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 101px;
+  position: relative;
+  top: 50px;
+  left: 224px;
+}
+
+.home .frame-4 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.home .image-desktop {
+  position: relative;
+  width: 353.0px;
+  height: 400.0px;
+  background-image: url(./img/image-3.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.home .ellipse {
+  width: 353px;
+  height: 400px;
+  border-radius: 176.5px / 200px;
+  border: 2px solid;
+  border-color: #bcbcbc;
+  transform: rotate(180.00deg);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.home .quote {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.home .frame-5 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.home .quote-icon {
+  position: relative;
+  width: 61.84px;
+  height: 45.53px;
+}
+
+.home .we-love-using {
+  position: relative;
+  width: 418px;
+  font-family: var(--secondary-body-text-title-18px-semibold-font-family);
+  font-weight: var(--secondary-body-text-title-18px-semibold-font-weight);
+  color: #2d2d2d;
+  font-size: var(--secondary-body-text-title-18px-semibold-font-size);
+  letter-spacing: var(--secondary-body-text-title-18px-semibold-letter-spacing);
+  line-height: var(--secondary-body-text-title-18px-semibold-line-height);
+  font-style: var(--secondary-body-text-title-18px-semibold-font-style);
+}
+
+.home .dylan-shaw {
+  position: relative;
+  width: fit-content;
+  opacity: 0.5;
+  font-family: var(--body-text-18px-regular-font-family);
+  font-weight: var(--body-text-18px-regular-font-weight);
+  color: #2d2d2d;
+  font-size: var(--body-text-18px-regular-font-size);
+  letter-spacing: var(--body-text-18px-regular-letter-spacing);
+  line-height: var(--body-text-18px-regular-line-height);
+  white-space: nowrap;
+  font-style: var(--body-text-18px-regular-font-style);
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Women’s Health Dietary Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleguide.css') }}">
+  </head>
+  <body>
+    <div class="home">
+      <!-- Top Bar -->
+      <div class="top-bar"></div>
+
+      <!-- Header Section -->
+      <header class="header">
+        <div class="div">
+          <div class="frame-wrapper">
+            <div class="frame">
+              <div class="frame-2">
+                <h1 class="title">Women’s Health Dietary Assistant</h1>
+                <p class="subtitle">
+                  Our application helps women manage their diet based on their body metrics and symptoms.
+                </p>
+              </div>
+              <a href="/recommendation">
+                <button class="primary-CTA-get">
+                  <div class="overlap-group">
+                    <div class="hover"></div>
+                    <div class="text-wrapper">Get Started</div>
+                  </div>
+                </button>
+              </a>
+            </div>
+          </div>
+          <img class="image" src="{{ url_for('static', filename='img/image.png') }}" alt="App Illustration">
+        </div>
+      </header>
+
+      <!-- Features Section -->
+      <section class="features">
+        <div class="frame-3">
+
+          <!-- Feature 1: AI Symptom Detection -->
+          <div class="feature-block">
+            <img src="{{ url_for('static', filename='img/Symptom detection.png') }}" alt="Symptom Detection Icon" class="feature-icon">
+            <div class="tile">AI Symptom Detection</div>
+            <p class="p">
+              Uses a smart AI model (BioBERT) to understand symptoms and map them to relevant diseases automatically.
+            </p>
+          </div>
+
+          <!-- Feature 2: Nutrient-based Recommendations -->
+          <div class="feature-block">
+            <img src="{{ url_for('static', filename='img/Nutrition.png') }}" alt="Nutrient Icon" class="feature-icon">
+            <div class="tile">Nutrient-Based Recommendations</div>
+            <p class="p">
+              Finds the essential nutrients your body needs based on your health condition and connects them to real food options.
+            </p>
+          </div>
+
+          <!-- Feature 3: Smart Calorie Filtering -->
+          <div class="feature-block">
+            <img src="{{ url_for('static', filename='img/Calorie.png') }}" alt="Calorie Icon" class="feature-icon">
+            <div class="tile">Smart Calorie Filtering</div>
+            <p class="p">
+              Suggests food items that match your daily calorie target—personalized for your age, gender, height, and weight.
+            </p>
+          </div>
+
+          <!-- Feature 4: Goal-Focused Guidance -->
+          <div class="feature-block">
+            <img src="{{ url_for('static', filename='img/Goal.png') }}" alt="Goal Icon" class="feature-icon">
+            <div class="tile">Goal-Focused Guidance</div>
+            <p class="p">
+              Supports specific health goals like weight loss, diabetes control, or heart health with focused food suggestions.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- User Feedback Section -->
+      <section class="user-feedback">
+        <div class="div-wrapper">
+          <div class="frame-4">
+            <div class="box">
+              <img class="harriet" src="{{ url_for('static', filename='img/Harriet.png') }}" alt="Harriet Beecher Stowe">
+            </div>
+            <div class="quote">
+              <div class="frame-5">
+                <img class="quote-icon" src="{{ url_for('static', filename='img/Quote icon.svg') }}" alt="Quote Icon">
+                <p class="we-love-using">A woman’s health is her capital.</p>
+              </div>
+              <div class="harriet-beecher">— Harriet Beecher Stowe</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
